@@ -1,0 +1,203 @@
+focus_tree = {
+	id = 7
+	continuous_focus_position = { x = 1100 y = 1960 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EPS
+		}
+	}
+	#Execution of the Radical Left
+	focus = {
+		id = EPS_execution_of_the_radical_left
+		icon = GFX_EPS_execution_of_the_radical_left-646260
+		x = 22
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#A Voice of Hope
+	focus = {
+		id = EPS_a_voice_of_hope
+		icon = GFX_EPS_a_voice_of_hope-646187
+		x = 30
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = EPS_execution_of_the_radical_left  }
+		mutually_exclusive = { focus = EPS_a_voice_of_reason  }
+	}
+
+	#A Voice of Reason
+	focus = {
+		id = EPS_a_voice_of_reason
+		icon = GFX_EPS_a_voice_of_reason-645479
+		x = 14
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = EPS_execution_of_the_radical_left  }
+		mutually_exclusive = { focus = EPS_a_voice_of_hope  }
+	}
+
+	#The Church of the Future
+	focus = {
+		id = EPS_the_church_of_the_future
+		icon = GFX_EPS_the_church_of_the_future-646163
+		x = 14
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = EPS_a_voice_of_reason  }
+		mutually_exclusive = { focus = EPS_a_church_of_the_past  }
+	}
+
+	#A Church of the Past
+	focus = {
+		id = EPS_a_church_of_the_past
+		icon = GFX_EPS_a_church_of_the_past-645904
+		x = 30
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = EPS_a_voice_of_hope  }
+	}
+
+	#A State of Reason
+	focus = {
+		id = EPS_a_state_of_reason
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 14
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = EPS_the_church_of_the_future  }
+		mutually_exclusive = { focus = EPS_free_from_the_chains_of_the_state  } mutually_exclusive = { focus = EPS_the_absolute_state  }
+	}
+
+	#Free From the Chains of the State
+	focus = {
+		id = EPS_free_from_the_chains_of_the_state
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 22
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = EPS_the_church_of_the_future  focus = EPS_a_church_of_the_past  focus = EPS_freedom_from_illegal_hierarchies  }
+	}
+
+	#The Absolute State
+	focus = {
+		id = EPS_the_absolute_state
+		icon = GFX_focus_GRE_an_orthodox_state
+		x = 30
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = EPS_a_church_of_the_past  }
+		mutually_exclusive = { focus = EPS_a_state_of_reason  } mutually_exclusive = { focus = EPS_free_from_the_chains_of_the_state  }
+	}
+
+	#Brain Harvest
+	focus = {
+		id = EPS_brain_harvest
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = EPS_listen_to_the_voices  }
+	}
+
+	#Listen to the Voices
+	focus = {
+		id = EPS_listen_to_the_voices
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = EPS_a_state_of_reason  }
+	}
+
+	#Into the Light
+	focus = {
+		id = EPS_into_the_light
+		icon = GFX_goal_unknown
+		x = 14
+		y = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = EPS_cult_of_the_future  } prerequisite = { focus = EPS_adaptation_of_the_mind  }
+	}
+
+	#Cult of the Future
+	focus = {
+		id = EPS_cult_of_the_future
+		icon = GFX_goal_unknown
+		x = 14
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = EPS_brain_harvest  }
+	}
+
+	#Psycology of the Voices
+	focus = {
+		id = EPS_psycology_of_the_voices
+		icon = GFX_goal_unknown
+		x = 12
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = EPS_listen_to_the_voices  }
+	}
+
+	#Adaptation of the Mind
+	focus = {
+		id = EPS_adaptation_of_the_mind
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = EPS_psycology_of_the_voices  }
+	}
+
+	#Freedom from Illegal Hierarchies
+	focus = {
+		id = EPS_freedom_from_illegal_hierarchies
+		icon = GFX_EPS_freedom_from_illegal_hierarchies-646056
+		x = 22
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = EPS_a_voice_of_reason  focus = EPS_a_voice_of_hope  }
+		mutually_exclusive = { focus = EPS_the_church_of_the_future  } mutually_exclusive = { focus = EPS_a_church_of_the_past  }
+	}
+
+}

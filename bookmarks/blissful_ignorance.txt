@@ -1,0 +1,134 @@
+bookmarks = {
+	bookmark = {
+		name = "blissful_ignorance_name"
+		desc = "blissful_ignorance_desc"
+		date = 1930.1.1.12
+	picture = "blissful_ignorance-1"
+		default_country = "ZER"
+		default = yes
+		"ZER" = {
+			history = "blissful_ignorance_ZER"
+			ideology = neutrality
+		}
+		"CIR" = {
+			history = "blissful_ignorance_CIR"
+			ideology = neutrality
+		}
+		"GMR" = {
+			history = "blissful_ignorance_GMR"
+			ideology = democratic
+		}
+		"GOO" = {
+			history = "blissful_ignorance_GOO"
+			ideology = democratic
+		}
+		"KST" = {
+			history = "blissful_ignorance_KST"
+			ideology = democratic
+		}
+		"MQL" = {
+			history = "blissful_ignorance_MQL"
+			ideology = neutrality
+		}
+		"RNE" = {
+			history = "blissful_ignorance_RNE"
+			ideology = neutrality
+			minor = yes
+		}
+		"EPS" = {
+			history = "blissful_ignorance_EPS"
+			ideology = neutrality
+			minor = yes
+		}
+		"WKL" = {
+			history = "blissful_ignorance_WKL"
+			ideology = neutrality
+			minor = yes
+		}
+		"BLT" = {
+			history = "blissful_ignorance_BLT"
+			ideology = neutrality
+			minor = yes
+		}
+		"DMI" = {
+			history = "blissful_ignorance_DMI"
+			ideology = neutrality
+			minor = yes
+		}
+		"AMG" = {
+			history = "blissful_ignorance_AMG"
+			ideology = neutrality
+			minor = yes
+		}
+		"SAN" = {
+			history = "blissful_ignorance_SAN"
+			ideology = democratic
+			minor = yes
+		}
+		"YYJ" = {
+			history = "blissful_ignorance_YYJ"
+			ideology = neutrality
+			minor = yes
+		}
+		"JSP" = {
+			history = "blissful_ignorance_JSP"
+			ideology = neutrality
+			minor = yes
+		}
+		"JON" = {
+			history = "blissful_ignorance_JON"
+			ideology = neutrality
+			minor = yes
+		}
+		"SHG" = {
+			history = "blissful_ignorance_SHG"
+			ideology = neutrality
+			minor = yes
+		}
+		"PTB" = {
+			history = "blissful_ignorance_PTB"
+			ideology = neutrality
+			minor = yes
+		}
+		"BES" = {
+			history = "blissful_ignorance_BES"
+			ideology = neutrality
+			minor = yes
+		}
+		"DND" = {
+			history = "blissful_ignorance_DND"
+			ideology = neutrality
+			minor = yes
+		}
+		"LDU" = {
+			history = "blissful_ignorance_LDU"
+			ideology = neutrality
+			minor = yes
+		}
+		"SMY" = {
+			history = "blissful_ignorance_SMY"
+			ideology = neutrality
+			minor = yes
+		}
+		"SIF" = {
+			history = "blissful_ignorance_SIF"
+			ideology = neutrality
+			minor = yes
+		}
+		"MNT" = {
+			history = "blissful_ignorance_MNT"
+			ideology = neutrality
+			minor = yes
+		}
+		"AVI" = {
+			history = "blissful_ignorance_AVI"
+			ideology = neutrality
+			minor = yes
+		}
+		"EDC" = {
+			history = "blissful_ignorance_EDC"
+			ideology = neutrality
+			minor = yes
+		}
+	}
+}

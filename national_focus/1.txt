@@ -1,0 +1,2301 @@
+focus_tree = {
+	id = 1
+	continuous_focus_position = { x = 13450 y = 10 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZER
+		}
+	}
+	#Decouple From Gold
+	focus = {
+		id = ZER_decouple_from_gold
+		icon = GFX_goal_unknown
+		x = 12
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		mutually_exclusive = { focus = ZER_maintain_the_gold_standard  }
+	}
+
+	#Maintain the Gold Standard
+	focus = {
+		id = ZER_maintain_the_gold_standard
+		icon = GFX_goal_unknown
+		x = 20
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		mutually_exclusive = { focus = ZER_decouple_from_gold  }
+	}
+
+	#Plentiful Resources
+	focus = {
+		id = ZER_plentiful_resources
+		icon = GFX_goal_unknown
+		x = 12
+		y = 26
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_polish_our_pearls  }
+	}
+
+	#An Oasis of Metalworking
+	focus = {
+		id = ZER_an_oasis_of_metalworking
+		icon = GFX_goal_unknown
+		x = 10
+		y = 25
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_polish_our_pearls  }
+	}
+
+	#Tourist Haven
+	focus = {
+		id = ZER_tourist_haven
+		icon = GFX_goal_unknown
+		x = 13
+		y = 25
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_polish_our_pearls  }
+	}
+
+	#Polish our Pearls
+	focus = {
+		id = ZER_polish_our_pearls
+		icon = GFX_goal_unknown
+		x = 11
+		y = 24
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_zerchersstringofpearls  }
+	}
+
+	#Undisputed Hegemon
+	focus = {
+		id = ZER_undisputed_hegemon
+		icon = GFX_ZER_undisputed_hegemon-718958
+		x = 29
+		y = 0
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_political_power = 100
+			
+			
+			
+		}
+	}
+
+	#Redress of the Empire
+	focus = {
+		id = ZER_redress_of_the_empire
+		icon = GFX_goal_unknown
+		x = 13
+		y = 19
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#The Great Mountains
+	focus = {
+		id = ZER_the_great_mountains
+		icon = GFX_focus_GRE_a_land_of_mountains
+		x = 2
+		y = 20
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_redress_of_the_empire }
+
+	}
+
+	#The Beaches of Zercacia
+	focus = {
+		id = ZER_the_beaches_of_zercacia
+		icon = GFX_goal_unknown
+		x = 6
+		y = 20
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_redress_of_the_empire }
+	}
+
+	#Island Havens
+	focus = {
+		id = ZER_island_havens
+		icon = GFX_goal_unknown
+		x = 11
+		y = 20
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_redress_of_the_empire }
+	}
+
+	#Desert Sands
+	focus = {
+		id = ZER_desert_sands
+		icon = GFX_goal_unknown
+		x = 16
+		y = 20
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_redress_of_the_empire }
+	}
+
+	#Near East Developments
+	focus = {
+		id = ZER_near_east_developments
+		icon = GFX_goal_unknown
+		x = 28
+		y = 20
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_redress_of_the_empire }
+	}
+
+	#An Anatolian Consul
+	focus = {
+		id = ZER_an_anatolian_consul
+		icon = GFX_goal_unknown
+		x = 27
+		y = 21
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_near_east_developments  }
+	}
+
+	#Alpine Agriculture
+	focus = {
+		id = ZER_alpine_agriculture
+		icon = GFX_ZER_alpine_agriculture-645921
+		x = 3
+		y = 21
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_the_great_mountains  }
+	}
+
+	#Clear New Mountain Passes
+	focus = {
+		id = ZER_clear_new_mountain_passes
+		icon = GFX_ZER_clear_new_mountain_passes-262129
+		x = 1
+		y = 21
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_the_great_mountains  }
+	}
+
+	#A Cragged Deposit
+	focus = {
+		id = ZER_a_cragged_deposit
+		icon = GFX_focus_generic_steel
+		x = 1
+		y = 22
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_clear_new_mountain_passes  }
+	}
+
+	#Cliffside Workshops
+	focus = {
+		id = ZER_cliffside_workshops
+		icon = GFX_focus_generic_industry_1
+		x = 3
+		y = 22
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_alpine_agriculture  } prerequisite = { focus = ZER_clear_new_mountain_passes  }
+	}
+
+	#Zercher's Great River
+	focus = {
+		id = ZER_zerchersgreatriver
+		icon = GFX_ZER_zerchersgreatriver-716475
+		x = 2
+		y = 23
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_cliffside_workshops  } prerequisite = { focus = ZER_a_cragged_deposit  }
+	}
+
+	#Hydroelectric Initiatives
+	focus = {
+		id = ZER_hydroelectric_initiatives
+		icon = GFX_goal_unknown
+		x = 1
+		y = 25
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_zerchersgreatriver  }
+	}
+
+	#Moving Mountains
+	focus = {
+		id = ZER_moving_mountains
+		icon = GFX_goal_unknown
+		x = 2
+		y = 24
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_zerchersgreatriver  } prerequisite = { }
+	}
+
+	#Consolidate Defensive Positions
+	focus = {
+		id = ZER_consolidate_defensive_positions
+		icon = GFX_goal_unknown
+		x = 3
+		y = 25
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ZER_zerchersgreatriver  } prerequisite = { }
+	}
+
+	#Stone Foundation
+	focus = {
+		id = ZER_stone_foundation
+		icon = GFX_goal_unknown
+		x = 2
+		y = 26
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_consolidate_defensive_positions  }
+	}
+
+	#Snowy Peaks Defend the Weak
+	focus = {
+		id = ZER_snowy_peaks_defend_the_weak
+		icon = GFX_goal_unknown
+		x = 3
+		y = 27
+		cost = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_moving_mountains  } prerequisite = { focus = ZER_stone_foundation  }
+	}
+
+	#Commercial Districts
+	focus = {
+		id = ZER_commercial_districts
+		icon = GFX_goal_unknown
+		x = 5
+		y = 21
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_the_beaches_of_zercacia  }
+	}
+
+	#Revive Shipbuilding
+	focus = {
+		id = ZER_revive_shipbuilding
+		icon = GFX_goal_unknown
+		x = 7
+		y = 21
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_the_beaches_of_zercacia  }
+	}
+
+	#Cultivate Tourism
+	focus = {
+		id = ZER_cultivate_tourism
+		icon = GFX_goal_unknown
+		x = 8
+		y = 22
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_the_beaches_of_zercacia  }
+	}
+
+	#Coastal Urbanism
+	focus = {
+		id = ZER_coastal_urbanism
+		icon = GFX_goal_unknown
+		x = 6
+		y = 22
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_commercial_districts  } prerequisite = { focus = ZER_revive_shipbuilding  }
+	}
+
+	#A Thin Strip of Sunshine
+	focus = {
+		id = ZER_a_thin_strip_of_sunshine
+		icon = GFX_goal_unknown
+		x = 7
+		y = 23
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_coastal_urbanism  } prerequisite = { focus = ZER_cultivate_tourism  }
+	}
+
+	#Zerdinian Steelworks
+	focus = {
+		id = ZER_zerdinian_steelworks
+		icon = GFX_goal_unknown
+		x = 11
+		y = 21
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_island_havens  }
+	}
+
+	#Mines of Zerprus
+	focus = {
+		id = ZER_mines_of_zerprus
+		icon = GFX_goal_unknown
+		x = 10
+		y = 22
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_island_havens  }
+	}
+
+	#Iberian Palms
+	focus = {
+		id = ZER_iberian_palms
+		icon = GFX_goal_unknown
+		x = 12
+		y = 22
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_island_havens  }
+	}
+
+	#Cragged Zalta
+	focus = {
+		id = ZER_cragged_zalta
+		icon = GFX_goal_unknown
+		x = 9
+		y = 21
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_island_havens  }
+	}
+
+	#Our Balkan Observatory
+	focus = {
+		id = ZER_our_balkan_observatory
+		icon = GFX_goal_unknown
+		x = 6
+		y = 24
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_a_thin_strip_of_sunshine  } prerequisite = { }
+	}
+
+	#Zercher's Naval Engineering Clique
+	focus = {
+		id = ZER_zerchersnavalengineeringclique
+		icon = GFX_goal_unknown
+		x = 5
+		y = 25
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_our_balkan_observatory  }
+	}
+
+	#Draw a Line in the Sand
+	focus = {
+		id = ZER_draw_a_line_in_the_sand
+		icon = GFX_goal_unknown
+		x = 7
+		y = 25
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ZER_a_thin_strip_of_sunshine  } prerequisite = { }
+	}
+
+	#Dredge the Docks
+	focus = {
+		id = ZER_dredge_the_docks
+		icon = GFX_goal_unknown
+		x = 6
+		y = 26
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_our_balkan_observatory  } prerequisite = { focus = ZER_zerchersnavalengineeringclique  }
+	}
+
+	#Expand the Administration Inland
+	focus = {
+		id = ZER_expand_the_administration_inland
+		icon = GFX_goal_unknown
+		x = 8
+		y = 24
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_a_thin_strip_of_sunshine  }
+	}
+
+	#Paradise of the Free Market
+	focus = {
+		id = ZER_paradise_of_the_free_market
+		icon = GFX_goal_unknown
+		x = 7
+		y = 27
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_dredge_the_docks  } prerequisite = { focus = ZER_draw_a_line_in_the_sand  }
+	}
+
+	#Rich Cultures
+	focus = {
+		id = ZER_rich_cultures
+		icon = GFX_goal_unknown
+		x = 9
+		y = 26
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_polish_our_pearls  }
+	}
+
+	#Zercher's String of Pearls
+	focus = {
+		id = ZER_zerchersstringofpearls
+		icon = GFX_ZER_zerchersstringofpearls-716474
+		x = 11
+		y = 23
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_mines_of_zerprus  } prerequisite = { focus = ZER_cragged_zalta  } prerequisite = { focus = ZER_iberian_palms  } prerequisite = { focus = ZER_zerdinian_steelworks  }
+	}
+
+	#Shining Mediterranean Jewels
+	focus = {
+		id = ZER_shining_mediterranean_jewels
+		icon = GFX_goal_unknown
+		x = 11
+		y = 27
+		cost = 15
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_an_oasis_of_metalworking  } prerequisite = { focus = ZER_rich_cultures  } prerequisite = { focus = ZER_plentiful_resources  } prerequisite = { focus = ZER_tourist_haven  }
+	}
+
+	#Lush Jungles
+	focus = {
+		id = ZER_lush_jungles
+		icon = GFX_goal_unknown
+		x = 22
+		y = 20
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_redress_of_the_empire }
+		mutually_exclusive = { focus = ZER_desert_sands  }
+	}
+
+	#Port Renovations
+	focus = {
+		id = ZER_port_renovations
+		icon = GFX_goal_unknown
+		x = 18
+		y = 21
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_desert_sands  }
+	}
+
+	#Infrastructure Modernization
+	focus = {
+		id = ZER_infrastructure_modernization
+		icon = GFX_goal_unknown
+		x = 15
+		y = 21
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_desert_sands  }
+	}
+
+	#Oil Prospecting
+	focus = {
+		id = ZER_oil_prospecting
+		icon = GFX_goal_unknown
+		x = 14
+		y = 22
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_infrastructure_modernization  }
+	}
+
+	#Benevolent Colonizers
+	focus = {
+		id = ZER_benevolent_colonizers
+		icon = GFX_goal_unknown
+		x = 19
+		y = 23
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_oil_prospecting  } prerequisite = { focus = ZER_steel_tracks  } prerequisite = { focus = ZER_expanded_oversight  focus = ZER_resource_expansion  } prerequisite = { focus = ZER_end_handcutting_practices  } prerequisite = { focus = ZER_congolese_ambitions  } prerequisite = { focus = ZER_shipyard_updates  }
+	}
+
+	#Congolese Ambitions
+	focus = {
+		id = ZER_congolese_ambitions
+		icon = GFX_goal_unknown
+		x = 24
+		y = 22
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_lush_jungles  }
+	}
+
+	#End Hand-Cutting Practices
+	focus = {
+		id = ZER_end_handcutting_practices
+		icon = GFX_goal_unknown
+		x = 22
+		y = 22
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_lush_jungles  }
+	}
+
+	#Resource Expansion
+	focus = {
+		id = ZER_resource_expansion
+		icon = GFX_goal_unknown
+		x = 20
+		y = 22
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_carving_through_the_jungle  } prerequisite = { focus = ZER_mining_profits  }
+	}
+
+	#Mining Profits
+	focus = {
+		id = ZER_mining_profits
+		icon = GFX_goal_unknown
+		x = 20
+		y = 21
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_lush_jungles  }
+	}
+
+	#Carving Through the Jungle
+	focus = {
+		id = ZER_carving_through_the_jungle
+		icon = GFX_goal_unknown
+		x = 22
+		y = 21
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_lush_jungles  }
+	}
+
+	#Shipyard Updates
+	focus = {
+		id = ZER_shipyard_updates
+		icon = GFX_goal_unknown
+		x = 24
+		y = 21
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_lush_jungles  }
+	}
+
+	#Expanded Oversight
+	focus = {
+		id = ZER_expanded_oversight
+		icon = GFX_goal_unknown
+		x = 18
+		y = 22
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_desert_sands  }
+	}
+
+	#Steel Tracks
+	focus = {
+		id = ZER_steel_tracks
+		icon = GFX_goal_unknown
+		x = 16
+		y = 22
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_infrastructure_modernization  } prerequisite = { focus = ZER_port_renovations  }
+	}
+
+	#Gateway to the East
+	focus = {
+		id = ZER_gateway_to_the_east
+		icon = GFX_goal_unknown
+		x = 28
+		y = 25
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_roman_model  } prerequisite = { }
+	}
+
+	#Central African Stratagem
+	focus = {
+		id = ZER_central_african_stratagem
+		icon = GFX_goal_unknown
+		x = 23
+		y = 24
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_benevolent_colonizers  } prerequisite = { }
+	}
+
+	#Pack the Sands
+	focus = {
+		id = ZER_pack_the_sands
+		icon = GFX_goal_unknown
+		x = 16
+		y = 24
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_benevolent_colonizers  } prerequisite = { }
+		mutually_exclusive = { focus = ZER_central_african_stratagem  }
+	}
+
+	#Desert Handicrafts
+	focus = {
+		id = ZER_desert_handicrafts
+		icon = GFX_goal_unknown
+		x = 16
+		y = 25
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_pack_the_sands  }
+	}
+
+	#Penetrating the Frontier
+	focus = {
+		id = ZER_penetrating_the_frontier
+		icon = GFX_goal_unknown
+		x = 18
+		y = 25
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_pack_the_sands  }
+	}
+
+	#Develop Egypt
+	focus = {
+		id = ZER_develop_egypt
+		icon = GFX_goal_unknown
+		x = 14
+		y = 26
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_pack_the_sands  }
+	}
+
+	#Cleave the Land
+	focus = {
+		id = ZER_cleave_the_land
+		icon = GFX_goal_unknown
+		x = 16
+		y = 26
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_desert_handicrafts  } prerequisite = { focus = ZER_penetrating_the_frontier  }
+	}
+
+	#Outreach to the Nomads
+	focus = {
+		id = ZER_outreach_to_the_nomads
+		icon = GFX_goal_unknown
+		x = 18
+		y = 26
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_penetrating_the_frontier  }
+	}
+
+	#Centralized Tax Schemes
+	focus = {
+		id = ZER_centralized_tax_schemes
+		icon = GFX_goal_unknown
+		x = 19
+		y = 27
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_cleave_the_land  } prerequisite = { focus = ZER_outreach_to_the_nomads  focus = ZER_electrify_the_gulf_of_guinea  } prerequisite = { focus = ZER_break_apart_rubber_monopoly  } prerequisite = { focus = ZER_alleviate_rubber_taxes  }
+	}
+
+	#Destroy Insurrection
+	focus = {
+		id = ZER_destroy_insurrection
+		icon = GFX_goal_unknown
+		x = 21
+		y = 27
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_cleave_the_land  } prerequisite = { focus = ZER_outreach_to_the_nomads  focus = ZER_electrify_the_gulf_of_guinea  } prerequisite = { focus = ZER_break_apart_rubber_monopoly  } prerequisite = { focus = ZER_alleviate_rubber_taxes  }
+	}
+
+	#Lessons of Desert Farming
+	focus = {
+		id = ZER_lessons_of_desert_farming
+		icon = GFX_goal_unknown
+		x = 15
+		y = 27
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ZER_desert_handicrafts  } prerequisite = { focus = ZER_cleave_the_land  }
+	}
+
+	#Revive Zai Agriculture
+	focus = {
+		id = ZER_revive_zai_agriculture
+		icon = GFX_goal_unknown
+		x = 17
+		y = 27
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_cleave_the_land  }
+	}
+
+	#Inroads Into Central Africa
+	focus = {
+		id = ZER_inroads_into_central_africa
+		icon = GFX_goal_unknown
+		x = 20
+		y = 25
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_central_african_stratagem  }
+	}
+
+	#Expanded Rubber Output
+	focus = {
+		id = ZER_expanded_rubber_output
+		icon = GFX_goal_unknown
+		x = 22
+		y = 25
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_central_african_stratagem  }
+	}
+
+	#Commercial Developments
+	focus = {
+		id = ZER_commercial_developments
+		icon = GFX_goal_unknown
+		x = 24
+		y = 25
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_central_african_stratagem  }
+	}
+
+	#Break Apart Rubber Monopoly
+	focus = {
+		id = ZER_break_apart_rubber_monopoly
+		icon = GFX_goal_unknown
+		x = 22
+		y = 26
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_expanded_rubber_output  } prerequisite = { focus = ZER_commercial_developments  }
+	}
+
+	#Electrify the Gulf of Guinea
+	focus = {
+		id = ZER_electrify_the_gulf_of_guinea
+		icon = GFX_goal_unknown
+		x = 20
+		y = 26
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_inroads_into_central_africa  }
+	}
+
+	#Alleviate Rubber Taxes
+	focus = {
+		id = ZER_alleviate_rubber_taxes
+		icon = GFX_goal_unknown
+		x = 24
+		y = 26
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_expanded_rubber_output  } prerequisite = { focus = ZER_commercial_developments  }
+	}
+
+	#Connect the Interior
+	focus = {
+		id = ZER_connect_the_interior
+		icon = GFX_goal_unknown
+		x = 23
+		y = 27
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_electrify_the_gulf_of_guinea  } prerequisite = { focus = ZER_central_african_stratagem  }
+	}
+
+	#An Integral Piece of Our Sea
+	focus = {
+		id = ZER_an_integral_piece_of_our_sea
+		icon = GFX_goal_unknown
+		x = 17
+		y = 28
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_lessons_of_desert_farming  } prerequisite = { focus = ZER_revive_zai_agriculture  } prerequisite = { focus = ZER_centralized_tax_schemes  } prerequisite = { focus = ZER_destroy_insurrection  }
+	}
+
+	#Our Station in This Land
+	focus = {
+		id = ZER_our_station_in_this_land
+		icon = GFX_goal_unknown
+		x = 23
+		y = 28
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_centralized_tax_schemes  } prerequisite = { focus = ZER_connect_the_interior  } prerequisite = { focus = ZER_destroy_insurrection  }
+	}
+
+	#Continental Hegemony
+	focus = {
+		id = ZER_continental_hegemony
+		icon = GFX_goal_unknown
+		x = 20
+		y = 29
+		cost = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_an_integral_piece_of_our_sea  } prerequisite = { focus = ZER_our_station_in_this_land  }
+	}
+
+	#Zercher's Crown Jewel
+	focus = {
+		id = ZER_zercherscrownjewel
+		icon = GFX_goal_unknown
+		x = 28
+		y = 30
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_an_exemplary_province  } prerequisite = { focus = ZER_conquer_the_rump  }
+	}
+
+	#Conquer the Rump
+	focus = {
+		id = ZER_conquer_the_rump
+		icon = GFX_goal_unknown
+		x = 29
+		y = 29
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_connect_the_near_east  } prerequisite = { focus = ZER_capitalist_haven  } prerequisite = { focus = ZER_the_holy_city  }
+	}
+
+	#The Holy City
+	focus = {
+		id = ZER_the_holy_city
+		icon = GFX_goal_unknown
+		x = 30
+		y = 28
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_gateway_to_the_east  }
+	}
+
+	#An Exemplary Province
+	focus = {
+		id = ZER_an_exemplary_province
+		icon = GFX_goal_unknown
+		x = 27
+		y = 29
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_connect_the_near_east  } prerequisite = { focus = ZER_capitalist_haven  } prerequisite = { focus = ZER_the_holy_city  }
+	}
+
+	#Juggernauts of Production
+	focus = {
+		id = ZER_juggernauts_of_production
+		icon = GFX_goal_unknown
+		x = 28
+		y = 27
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_anatolian_railways  } prerequisite = { focus = ZER_anatolian_prosperity  } prerequisite = { focus = ZER_the_gamerizer_model  }
+	}
+
+	#Connect the Near East
+	focus = {
+		id = ZER_connect_the_near_east
+		icon = GFX_goal_unknown
+		x = 26
+		y = 28
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_anatolian_railways  } prerequisite = { focus = ZER_cultivating_our_subjects  }
+	}
+
+	#Capitalist Haven
+	focus = {
+		id = ZER_capitalist_haven
+		icon = GFX_goal_unknown
+		x = 28
+		y = 28
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_maximized_profitability  } prerequisite = { focus = ZER_juggernauts_of_production  }
+	}
+
+	#Clear the Slums
+	focus = {
+		id = ZER_clear_the_slums
+		icon = GFX_goal_unknown
+		x = 28
+		y = 22
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_an_anatolian_consul  } prerequisite = { focus = ZER_laying_the_groundwork  }
+	}
+
+	#Laying the Groundwork
+	focus = {
+		id = ZER_laying_the_groundwork
+		icon = GFX_goal_unknown
+		x = 29
+		y = 21
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_near_east_developments  }
+	}
+
+	#Curtail Wealthy Elites
+	focus = {
+		id = ZER_curtail_wealthy_elites
+		icon = GFX_goal_unknown
+		x = 26
+		y = 22
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_an_anatolian_consul  } prerequisite = { focus = ZER_laying_the_groundwork  }
+	}
+
+	#Comprehensive Tax Reform
+	focus = {
+		id = ZER_comprehensive_tax_reform
+		icon = GFX_goal_unknown
+		x = 28
+		y = 23
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_clear_the_slums  } prerequisite = { focus = ZER_curtail_wealthy_elites  }
+	}
+
+	#Cultivating Our Subjects
+	focus = {
+		id = ZER_cultivating_our_subjects
+		icon = GFX_goal_unknown
+		x = 26
+		y = 25
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_roman_model  } prerequisite = { }
+	}
+
+	#Deepen Our Roots
+	focus = {
+		id = ZER_deepen_our_roots
+		icon = GFX_goal_unknown
+		x = 26
+		y = 23
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_curtail_wealthy_elites  }
+	}
+
+	#Roman Model
+	focus = {
+		id = ZER_roman_model
+		icon = GFX_goal_unknown
+		x = 28
+		y = 24
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_comprehensive_tax_reform  }
+	}
+
+	#A Laissez-Faire System
+	focus = {
+		id = ZER_a_laissezfaire_system
+		icon = GFX_goal_unknown
+		x = 30
+		y = 25
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_roman_model  } prerequisite = { }
+	}
+
+	#The Gamerizer Model
+	focus = {
+		id = ZER_the_gamerizer_model
+		icon = GFX_goal_unknown
+		x = 31
+		y = 26
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_a_laissezfaire_system  }
+	}
+
+	#Maximized Profitability
+	focus = {
+		id = ZER_maximized_profitability
+		icon = GFX_goal_unknown
+		x = 31
+		y = 27
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_the_gamerizer_model  }
+	}
+
+	#Anatolian Prosperity
+	focus = {
+		id = ZER_anatolian_prosperity
+		icon = GFX_goal_unknown
+		x = 29
+		y = 26
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_a_laissezfaire_system  } prerequisite = { focus = ZER_gateway_to_the_east  }
+	}
+
+	#Anatolian Railways
+	focus = {
+		id = ZER_anatolian_railways
+		icon = GFX_goal_unknown
+		x = 27
+		y = 26
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_gateway_to_the_east  }
+	}
+
+	#Our Place In the Sun
+	focus = {
+		id = ZER_our_place_in_the_sun
+		icon = GFX_ZER_our_place_in_the_sun-718963
+		x = 26
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_undisputed_hegemon }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	#Hemophilia
+	focus = {
+		id = ZER_hemophilia
+		icon = GFX_goal_unknown
+		x = 29
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_total_destruction  }
+	}
+
+	#Clotting the Wound
+	focus = {
+		id = ZER_clotting_the_wound
+		icon = GFX_goal_unknown
+		x = 31
+		y = 5
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_total_destruction  }
+	}
+
+	#Benefactors of Serenity
+	focus = {
+		id = ZER_benefactors_of_serenity
+		icon = GFX_goal_anschluss
+		x = 31
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_undisputed_hegemon  }
+	}
+
+	#Paradise on Earth
+	focus = {
+		id = ZER_paradise_on_earth
+		icon = GFX_ZER_paradise_on_earth-718982
+		x = 28
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_undisputed_hegemon  }
+	}
+
+	#Us, Sublime Defenders
+	focus = {
+		id = ZER_ussublimedefenders
+		icon = GFX_ZER_ussublimedefenders-718988
+		x = 30
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_undisputed_hegemon  }
+	}
+
+	#Greatness Unparalleled
+	focus = {
+		id = ZER_greatness_unparalleled
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 32
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_undisputed_hegemon  }
+	}
+
+	#Celebrated Heroes
+	focus = {
+		id = ZER_celebrated_heroes
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+		x = 27
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_undisputed_hegemon  }
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	#Arbiters of Stability
+	focus = {
+		id = ZER_arbiters_of_stability
+		icon = GFX_ZER_arbiters_of_stability-262055
+		x = 29
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_our_place_in_the_sun }
+		prerequisite = { focus = ZER_celebrated_heroes }
+		prerequisite = { focus = ZER_paradise_on_earth }
+		prerequisite = { focus = ZER_ussublimedefenders }
+		prerequisite = { focus = ZER_benefactors_of_serenity }
+		prerequisite = { focus = ZER_greatness_unparalleled }
+	}
+
+	#Total Destruction
+	focus = {
+		id = ZER_total_destruction
+		icon = GFX_goal_unknown
+		x = 29
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#The Banks
+	focus = {
+		id = ZER_the_banks
+		icon = GFX_goal_unknown
+		x = 27
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_total_destruction  }
+	}
+
+	#Reconstitution
+	focus = {
+		id = ZER_reconstitution
+		icon = GFX_goal_unknown
+		x = 29
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_straight_steering  } prerequisite = { focus = ZER_currency_concerns  } prerequisite = { focus = ZER_buttress_our_borders  }
+	}
+
+	#Emergency Bailouts
+	focus = {
+		id = ZER_emergency_bailouts
+		icon = GFX_goal_unknown
+		x = 3
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = ZER_disestablish_the_institutions  }
+		completion_reward = {
+			add_timed_idea = {
+			    idea = ZER_emergency_bank_bailouts
+			    days = 180
+			}
+			
+			
+			add_political_power = 25
+			
+			
+		}
+	}
+
+	#Bank Holiday
+	focus = {
+		id = ZER_bank_holiday
+		icon = GFX_goal_unknown
+		x = 1
+		y = 0
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = 0.05
+			
+			
+		}
+	}
+
+	#Consolidate the National Bank
+	focus = {
+		id = ZER_consolidate_the_national_bank
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_emergency_bailouts  } prerequisite = { focus = ZER_bank_holiday  }
+	}
+
+	#Disestablish the Institutions
+	focus = {
+		id = ZER_disestablish_the_institutions
+		icon = GFX_goal_unknown
+		x = 6
+		y = 0
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = ZER_emergency_bailouts  }
+	}
+
+	#Hike Interest Rates
+	focus = {
+		id = ZER_hike_interest_rates
+		icon = GFX_goal_unknown
+		x = 2
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_consolidate_the_national_bank  }
+	}
+
+	#Bank Liquidation
+	focus = {
+		id = ZER_bank_liquidation
+		icon = GFX_goal_unknown
+		x = 4
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_consolidate_the_national_bank  }
+	}
+
+	#Bank Conservation Effort
+	focus = {
+		id = ZER_bank_conservation_effort
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_consolidate_the_national_bank  }
+	}
+
+	#Rigorous Assessment
+	focus = {
+		id = ZER_rigorous_assessment
+		icon = GFX_goal_unknown
+		x = 2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_bank_conservation_effort  } prerequisite = { focus = ZER_hike_interest_rates  } prerequisite = { focus = ZER_bank_liquidation  }
+	}
+
+	#Widespread Public Spending
+	focus = {
+		id = ZER_widespread_public_spending
+		icon = GFX_goal_unknown
+		x = 0
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_bank_conservation_effort  }
+		completion_reward = {
+			add_ideas = ZER_quantitative_easing
+		}
+	}
+
+	#Expropriate Private Assets
+	focus = {
+		id = ZER_expropriate_private_assets
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_bank_liquidation  }
+		completion_reward = {
+			add_ideas = ZER_confiscated_securities
+		}
+	}
+
+	#Reopen Institutions
+	focus = {
+		id = ZER_reopen_institutions
+		icon = GFX_goal_unknown
+		x = 2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_rigorous_assessment  } prerequisite = { focus = ZER_expropriate_private_assets  focus = ZER_rigorous_assessment  } prerequisite = { focus = ZER_widespread_public_spending  }
+		completion_reward = {
+			remove_ideas = ZER_emergency_bank_bailouts
+			
+			
+			
+		}
+	}
+
+	#Comprehensive Bank Reform
+	focus = {
+		id = ZER_comprehensive_bank_reform
+		icon = GFX_goal_unknown
+		x = 2
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_reopen_institutions  } prerequisite = { focus = ZER_disseminate_state_credits  } prerequisite = { focus = ZER_financial_austerity  }
+	}
+
+	#Disseminate State Credits
+	focus = {
+		id = ZER_disseminate_state_credits
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_widespread_public_spending  } prerequisite = { focus = ZER_rigorous_assessment  }
+		completion_reward = {
+			add_ideas = ZER_state_lending
+		}
+	}
+
+	#Financial Austerity
+	focus = {
+		id = ZER_financial_austerity
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_rigorous_assessment  } prerequisite = { focus = ZER_expropriate_private_assets  }
+		completion_reward = {
+			add_stability = 0.1
+			
+			
+		}
+	}
+
+	#Tear Down the National Bank
+	focus = {
+		id = ZER_tear_down_the_national_bank
+		icon = GFX_goal_unknown
+		x = 6
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_disestablish_the_institutions  }
+	}
+
+	#Empty the Coffers
+	focus = {
+		id = ZER_empty_the_coffers
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_rip_apart_the_systems  }
+	}
+
+	#Rip Apart the Systems
+	focus = {
+		id = ZER_rip_apart_the_systems
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_tear_down_the_national_bank  }
+	}
+
+	#Absolve Public Accountability
+	focus = {
+		id = ZER_absolve_public_accountability
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_empty_the_coffers  }
+	}
+
+	#Divestment to the Market
+	focus = {
+		id = ZER_divestment_to_the_market
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_absolve_public_accountability  } prerequisite = { focus = ZER_absolve_public_accountability  }
+	}
+
+	#Expand Government Budget
+	focus = {
+		id = ZER_expand_government_budget
+		icon = GFX_goal_unknown
+		x = 10
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_decouple_from_gold  } prerequisite = { }
+	}
+
+	#Unified Economic Oversight
+	focus = {
+		id = ZER_unified_economic_oversight
+		icon = GFX_goal_unknown
+		x = 12
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_decouple_from_gold  } prerequisite = { }
+	}
+
+	#Bolster Liquidity
+	focus = {
+		id = ZER_bolster_liquidity
+		icon = GFX_goal_unknown
+		x = 14
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_decouple_from_gold  } prerequisite = { }
+	}
+
+	#Expansive Public Projects
+	focus = {
+		id = ZER_expansive_public_projects
+		icon = GFX_goal_unknown
+		x = 11
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_expand_government_budget  } prerequisite = { focus = ZER_unified_economic_oversight  }
+	}
+
+	#Weaponize Inflation
+	focus = {
+		id = ZER_weaponize_inflation
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_unified_economic_oversight  } prerequisite = { focus = ZER_bolster_liquidity  }
+	}
+
+	#Rein in the Budget
+	focus = {
+		id = ZER_rein_in_the_budget
+		icon = GFX_goal_unknown
+		x = 20
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { } prerequisite = { focus = ZER_maintain_the_gold_standard  }
+	}
+
+	#Aggressive Trade Measures
+	focus = {
+		id = ZER_aggressive_trade_measures
+		icon = GFX_goal_unknown
+		x = 18
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { } prerequisite = { focus = ZER_maintain_the_gold_standard  }
+	}
+
+	#Rural Appeal
+	focus = {
+		id = ZER_rural_appeal
+		icon = GFX_goal_unknown
+		x = 22
+		y = 1
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { } prerequisite = { focus = ZER_maintain_the_gold_standard  }
+	}
+
+	#Cultivate Consumerism
+	focus = {
+		id = ZER_cultivate_consumerism
+		icon = GFX_goal_unknown
+		x = 23
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_rural_appeal  } prerequisite = { focus = ZER_aggressive_trade_measures  }
+	}
+
+	#Slash Sinecure Offices
+	focus = {
+		id = ZER_slash_sinecure_offices
+		icon = GFX_goal_unknown
+		x = 20
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_rein_in_the_budget  }
+	}
+
+	#Straight Steering
+	focus = {
+		id = ZER_straight_steering
+		icon = GFX_goal_unknown
+		x = 27
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_face_the_public  }
+	}
+
+	#Currency Concerns
+	focus = {
+		id = ZER_currency_concerns
+		icon = GFX_goal_unknown
+		x = 29
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_face_the_public  }
+	}
+
+	#Buttress Our Borders
+	focus = {
+		id = ZER_buttress_our_borders
+		icon = GFX_goal_unknown
+		x = 31
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_face_the_public  }
+	}
+
+	#Your Majesty, Are You Okay?
+	focus = {
+		id = ZER_yourmajestyareyouokay
+		icon = GFX_ZER_yourmajestyareyouokay-4
+		x = 31
+		y = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Face the Public
+	focus = {
+		id = ZER_face_the_public
+		icon = GFX_goal_unknown
+		x = 29
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_the_banks  } prerequisite = { focus = ZER_hemophilia  } prerequisite = { focus = ZER_clotting_the_wound  }
+	}
+
+	#Convene with Big Business
+	focus = {
+		id = ZER_convene_with_big_business
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_unified_economic_oversight  }
+	}
+
+	#Renew Public Works Initiatives
+	focus = {
+		id = ZER_renew_public_works_initiatives
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_expansive_public_projects  } prerequisite = { focus = ZER_weaponize_inflation  }
+	}
+
+	#Rekindle International Trade
+	focus = {
+		id = ZER_rekindle_international_trade
+		icon = GFX_goal_unknown
+		x = 15
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_unified_economic_oversight  }
+	}
+
+	#Zercher's Bank of International Exchange
+	focus = {
+		id = ZER_zerchersbankofinternationalexchange
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_cut_tariffs  }
+	}
+
+	#Government Cartel
+	focus = {
+		id = ZER_government_cartel
+		icon = GFX_goal_unknown
+		x = 8
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_convene_with_big_business  }
+	}
+
+	#Standardized Industrial Codes
+	focus = {
+		id = ZER_standardized_industrial_codes
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_convene_with_big_business  } prerequisite = { focus = ZER_government_cartel  }
+	}
+
+	#Cut Tariffs
+	focus = {
+		id = ZER_cut_tariffs
+		icon = GFX_goal_unknown
+		x = 15
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_rekindle_international_trade  }
+	}
+
+	#Placate the Farmers
+	focus = {
+		id = ZER_placate_the_farmers
+		icon = GFX_goal_unknown
+		x = 13
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_expansive_public_projects  }
+	}
+
+	#Technical Outreach
+	focus = {
+		id = ZER_technical_outreach
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_placate_the_farmers  }
+	}
+
+	#Sell State Property
+	focus = {
+		id = ZER_sell_state_property
+		icon = GFX_goal_unknown
+		x = 20
+		y = 4
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_minimize_government  }
+	}
+
+	#Remove Children from Factories
+	focus = {
+		id = ZER_remove_children_from_factories
+		icon = GFX_goal_unknown
+		x = 10
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_standardized_industrial_codes  }
+	}
+
+	#Insure Government Contracts
+	focus = {
+		id = ZER_insure_government_contracts
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_renew_public_works_initiatives  }
+	}
+
+	#Establish a Minimum Wage
+	focus = {
+		id = ZER_establish_a_minimum_wage
+		icon = GFX_goal_unknown
+		x = 8
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_standardized_industrial_codes  }
+	}
+
+	#Champion of Commerce
+	focus = {
+		id = ZER_champion_of_commerce
+		icon = GFX_goal_unknown
+		x = 16
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ZER_cut_tariffs  }
+	}
+
+	#Workers of Zercher's Crop, Rise!
+	focus = {
+		id = ZER_workersofzercherscroprise
+		icon = GFX_goal_unknown
+		x = 56
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Limit International Trade
+	focus = {
+		id = ZER_limit_international_trade
+		icon = GFX_goal_unknown
+		x = 18
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_rein_in_the_budget  } prerequisite = { focus = ZER_aggressive_trade_measures  }
+	}
+
+	#Hike Tariffs
+	focus = {
+		id = ZER_hike_tariffs
+		icon = GFX_goal_unknown
+		x = 18
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_limit_international_trade  }
+	}
+
+	#Protect Domestic Manufacturers
+	focus = {
+		id = ZER_protect_domestic_manufacturers
+		icon = GFX_goal_unknown
+		x = 18
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_hike_tariffs  }
+	}
+
+	#Suspend Minimum Wage
+	focus = {
+		id = ZER_suspend_minimum_wage
+		icon = GFX_goal_unknown
+		x = 20
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_sell_state_property  }
+	}
+
+	#Minimize Government
+	focus = {
+		id = ZER_minimize_government
+		icon = GFX_goal_unknown
+		x = 20
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_slash_sinecure_offices  }
+	}
+
+	#Reduce Welfare Stipends
+	focus = {
+		id = ZER_reduce_welfare_stipends
+		icon = GFX_goal_unknown
+		x = 22
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_rein_in_the_budget  }
+	}
+
+	#Imperial Austerity
+	focus = {
+		id = ZER_imperial_austerity
+		icon = GFX_goal_unknown
+		x = 18
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_protect_domestic_manufacturers  }
+	}
+
+	#Army Spending Debate
+	focus = {
+		id = ZER_army_spending_debate
+		icon = GFX_goal_unknown
+		x = 22
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_reduce_welfare_stipends  } prerequisite = { focus = ZER_minimize_government  }
+	}
+
+	#Annull Government Contracts
+	focus = {
+		id = ZER_annull_government_contracts
+		icon = GFX_goal_unknown
+		x = 22
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_sell_state_property  } prerequisite = { focus = ZER_army_spending_debate  }
+	}
+
+	#Snap Elections
+	focus = {
+		id = ZER_snap_elections
+		icon = GFX_goal_unknown
+		x = 47
+		y = 0
+		cost = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#The Fragile Center Holds
+	focus = {
+		id = ZER_the_fragile_center_holds
+		icon = GFX_goal_unknown
+		x = 43
+		y = 1
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			add_ideas = ZER_fractured_parliament
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_snap_elections }
+	}
+
+	#Empower Zercher's Surrogates
+	focus = {
+		id = ZER_empowerzercherssurrogates
+		icon = GFX_goal_unknown
+		x = 43
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_the_fragile_center_holds }
+	}
+
+	#Assemble the Social Democrats
+	focus = {
+		id = ZER_assemble_the_social_democrats
+		icon = GFX_goal_unknown
+		x = 37
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_the_fragile_center_holds }
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+
+	#Conservatism Triumphant
+	focus = {
+		id = ZER_conservatism_triumphant
+		icon = GFX_goal_unknown
+		x = 49
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_the_fragile_center_holds }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	#A Government of Labor
+	focus = {
+		id = ZER_a_government_of_labor
+		icon = GFX_goal_unknown
+		x = 34
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ZER_assemble_the_social_democrats }
+	}
+
+}

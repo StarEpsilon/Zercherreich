@@ -1,0 +1,27 @@
+ideologies = {
+	libertarianism = {
+		types = {
+			anarchocapitalism = {  }
+			minarchism = {  }
+			classical_liberalism = {  }
+			social_libertarianism = {  }
+		}
+		dynamic_faction_names = {
+		}
+		color = { 120 74 217 }
+		can_collaborate = yes
+		faction_modifiers = {
+		}
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = yes
+		}
+		modifiers = {
+		}
+		ai_neutral = yes
+	}
+}

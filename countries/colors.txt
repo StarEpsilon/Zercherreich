@@ -1,0 +1,150 @@
+
+#Custom colours start here
+MNT = {
+	color = rgb { 222 157 191 }
+	color_ui = rgb { 222 157 191 }
+}
+SIF = {
+	color = rgb { 90 118 89 }
+	color_ui = rgb { 90 118 89 }
+}
+SMY = {
+	color = rgb { 204 135 210 }
+	color_ui = rgb { 204 135 210 }
+}
+DND = {
+	color = rgb { 116 14 25 }
+	color_ui = rgb { 116 14 25 }
+}
+LDU = {
+	color = rgb { 183 116 102 }
+	color_ui = rgb { 183 116 102 }
+}
+BES = {
+	color = rgb { 224 207 213 }
+	color_ui = rgb { 224 207 213 }
+}
+PTB = {
+	color = rgb { 200 51 107 }
+	color_ui = rgb { 200 51 107 }
+}
+SHG = {
+	color = rgb { 153 155 156 }
+	color_ui = rgb { 153 155 156 }
+}
+JON = {
+	color = rgb { 53 81 141 }
+	color_ui = rgb { 53 81 141 }
+}
+JSP = {
+	color = rgb { 38 122 193 }
+	color_ui = rgb { 38 122 193 }
+}
+YYJ = {
+	color = rgb { 92 64 55 }
+	color_ui = rgb { 92 64 55 }
+}
+SAN = {
+	color = rgb { 220 209 195 }
+	color_ui = rgb { 220 209 195 }
+}
+AMG = {
+	color = rgb { 159 27 70 }
+	color_ui = rgb { 159 27 70 }
+}
+DMI = {
+	color = rgb { 109 146 94 }
+	color_ui = rgb { 109 146 94 }
+}
+BLT = {
+	color = rgb { 73 85 48 }
+	color_ui = rgb { 73 85 48 }
+}
+WKL = {
+	color = rgb { 77 168 152 }
+	color_ui = rgb { 77 168 152 }
+}
+EPS = {
+	color = rgb { 60 0 61 }
+	color_ui = rgb { 60 0 61 }
+}
+RNE = {
+	color = rgb { 255 207 31 }
+	color_ui = rgb { 255 207 31 }
+}
+MQL = {
+	color = rgb { 112 64 128 }
+	color_ui = rgb { 112 64 128 }
+}
+KST = {
+	color = rgb { 122 187 228 }
+	color_ui = rgb { 122 187 228 }
+}
+GOO = {
+	color = rgb { 194 172 118 }
+	color_ui = rgb { 194 172 118 }
+}
+GMR = {
+	color = rgb { 19 49 152 }
+	color_ui = rgb { 19 49 152 }
+}
+CIR = {
+	color = rgb { 90 98 150 }
+	color_ui = rgb { 90 98 150 }
+}
+ZER = {
+	color = rgb { 204 124 131 }
+	color_ui = rgb { 204 124 131 }
+}
+AVI = {
+	color = rgb { 58 79 146 }
+	color_ui = rgb { 58 79 146 }
+}
+EDC = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+ZAQ = {
+	color = rgb { 204 124 131 }
+	color_ui = rgb { 204 124 131 }
+}
+ZEG = {
+	color = rgb { 204 124 131 }
+	color_ui = rgb { 204 124 131 }
+}
+ZGR = {
+	color = rgb { 204 124 131 }
+	color_ui = rgb { 204 124 131 }
+}
+ZAT = {
+	color = rgb { 204 124 131 }
+	color_ui = rgb { 204 124 131 }
+}
+ZIN = {
+	color = rgb { 204 124 131 }
+	color_ui = rgb { 204 124 131 }
+}
+DIN = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+WKH = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+RCD = {
+	color = rgb { 255 207 31 }
+	color_ui = rgb { 255 207 31 }
+}
+REQ = {
+	color = rgb { 255 207 31 }
+	color_ui = rgb { 255 207 31 }
+}
+MER = {
+	color = rgb { 79 0 0 }
+	color_ui = rgb { 79 0 0 }
+}
+LST = {
+	color = rgb { 176 194 137 }
+	color_ui = rgb { 176 194 137 }
+}

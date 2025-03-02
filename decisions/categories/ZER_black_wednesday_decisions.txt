@@ -1,0 +1,5 @@
+ZER_black_wednesday_decisions_cat = {
+	allowed = {
+		tag = ZER
+	}
+}
